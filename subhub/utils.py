@@ -16,7 +16,7 @@ class FeedError(Exception):
     pass
 
 
-HTTP_TIMEOUT = 10
+HTTP_TIMEOUT = 600  # express in second 
 HTTP_ERRORS = (IOError, httplib2.HttpLib2Error, socket.error)
 FEED_ERRORS = (ExpatError, FeedError)
 
